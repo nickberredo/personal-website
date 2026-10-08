@@ -1,0 +1,13 @@
+# Local workspace and previous hosting artifacts
+.sites-checkout/
+.openai/
+
+# Windows metadata files are not website assets
+*:Zone.Identifier
+
+# Source exports and local reference files (the deployed copies live in dist/assets/)
+/315064d9-b1f7-4776-aa74-4605608195b9_ExportBlock-6e9aee08-4c03-4fc7-b183-b9634562d0d1.zip
+/old_notion.pdf
+/BUSINESSCARD.pdf
+/NicolasBerredo_Resume.pdf
+/Captura de tela 2026-10-07 221405.png

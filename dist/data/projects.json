@@ -1,0 +1,89 @@
+{
+  "$schema": "./projects.schema.json",
+  "siteSections": [
+    { "id": "featured", "label": "Featured research" },
+    { "id": "hardware", "label": "Hardware" },
+    { "id": "software", "label": "Software & analysis" }
+  ],
+  "projects": [
+    {
+      "id": "shield", "section": "featured", "featured": true, "title": "Project SHIELD", "tags": ["Embedded AI", "Sensor health", "TinyML"], "status": "In progress", "accent": "ink", "image": null, "imageAlt": "", "summary": "An on-device sensor-health intelligence framework that detects degradation and predicts failures from raw sensor signals—built for reliable, self-diagnosing embedded systems.", "externalUrl": "https://www.arcuw.org/shield", "externalLabel": "View ARC Lab project", "links": [], "gallery": [],
+      "sections": [
+        { "heading": "Focus", "body": "Universal, on-device sensor health intelligence for early degradation detection and failure prediction." },
+        { "heading": "Approach", "body": "Physics-informed residual modeling paired with compact TinyML forecasting on MCU-class hardware." }
+      ]
+    },
+    {
+      "id": "pcb-business-card", "section": "hardware", "title": "PCB Business Card", "tags": ["PCB", "HID", "Prototype"], "status": "In progress", "accent": "gold", "image": "assets/projects/pcb-business-card/board.png", "imageAlt": "PCB Business Card design", "summary": "An HID PCB business card project currently under development.", "links": [],
+      "gallery": [
+        { "src": "assets/projects/pcb-business-card/board.png", "alt": "PCB Business Card board design", "caption": "Board design" },
+        { "src": "assets/projects/pcb-business-card/design.png", "alt": "PCB Business Card design detail", "caption": "Design detail" }
+      ],
+      "sections": [ { "heading": "Project", "body": "Developing a custom HID PCB business card." } ]
+    },
+    {
+      "id": "vibration-monitoring", "section": "hardware", "title": "Vibration Monitoring for Driver Comfort Analysis", "tags": ["BAJA SAE", "Sensing", "Arduino"], "status": "Completed", "accent": "green", "image": "assets/projects/vibration-monitoring/seat-test.jpg", "imageAlt": "Vibration measurement device testing on a driver seat", "summary": "A vibration measurement system co-developed for a BAJA SAE team to assess and improve driver comfort.", "links": [ { "label": "View GitHub repository", "url": "https://github.com/nickberredo/vibration_measurement/tree/main" } ],
+      "gallery": [
+        { "src": "assets/projects/vibration-monitoring/acceleration.png", "alt": "Acceleration chart at optimal pressure", "caption": "Acceleration at the optimal pressure" },
+        { "src": "assets/projects/vibration-monitoring/circuit-prototype.jpg", "alt": "Circuit prototype", "caption": "Circuit prototype" },
+        { "src": "assets/projects/vibration-monitoring/seat-test.jpg", "alt": "Device testing on pilot seat", "caption": "Device testing on the pilot seat" }
+      ],
+      "sections": [
+        { "heading": "System design", "body": "An ADXL345 accelerometer communicated over I2C and was mounted on the driver seat following ISO 2631-1. An Arduino Uno handled data acquisition, an SD-card module stored data over SPI, and the system plotted and analyzed RMS vibration." },
+        { "heading": "Testing & results", "body": "The team compared three suspension configurations, evaluated exposure against ISO-5439 limits, and identified 55 psi rear and 45 psi front suspension pressures as the optimal setup." }
+      ]
+    },
+    {
+      "id": "raijin", "section": "hardware", "title": "Raijin — High Voltage Electric Drive & Cage Development", "tags": ["High voltage", "Embedded control", "Safety"], "status": "On hold", "accent": "light", "image": "assets/projects/raijin/prototype.png", "imageAlt": "Raijin prototype circuit", "summary": "R&D work with UW E-Truck Engineering on a custom cage and a 650 V electric-drive system.", "links": [],
+      "gallery": [
+        { "src": "assets/projects/raijin/logo.png", "alt": "E-Truck RSO logo", "caption": "UW E-Truck Engineering" },
+        { "src": "assets/projects/raijin/prototype.png", "alt": "High-voltage safety-circuit prototype", "caption": "Circuit prototype" }
+      ],
+      "sections": [
+        { "heading": "Objective", "body": "Develop a custom cage with a 650 V electric-drive system capable of controlling a high-voltage motor through embedded motor-control algorithms and interlock systems." },
+        { "heading": "Current work", "body": "Designed a low-voltage interlock circuit with voltage/current trip detection, developed a fan-tachometer signal-processing circuit, and prototyped with regulators, comparators, transducers, timer ICs, and passive components. Verified interlock switching with an oscilloscope." }
+      ]
+    },
+    {
+      "id": "smart-waste", "section": "hardware", "title": "Smart Waste Management Conveyor Belt", "tags": ["Embedded systems", "SolidWorks", "Social impact"], "status": "Completed", "accent": "ink", "image": "assets/projects/smart-waste/model.png", "imageAlt": "SolidWorks model of a smart recycling conveyor", "summary": "A proof-of-concept smart recycling conveyor informed by a study of waste-management challenges in the Parque da Cidade favela community.", "links": [ { "label": "View GitHub repository", "url": "https://github.com/nickberredo/conveyor_belt" } ],
+      "gallery": [
+        { "src": "assets/projects/smart-waste/model.png", "alt": "SolidWorks model of the final conveyor concept", "caption": "End-product model" },
+        { "src": "assets/projects/smart-waste/circuitry.jpg", "alt": "Conveyor proof-of-concept circuitry", "caption": "Circuitry during production" },
+        { "src": "assets/projects/smart-waste/schematic.png", "alt": "Arduino conveyor circuit schematic", "caption": "Arduino circuit schematic" }
+      ],
+      "sections": [
+        { "heading": "System components", "body": "Arduino Mega 2560 R3, an ultrasonic distance sensor, LEDs, a motor-driven conveyor, relays, and an external power supply." },
+        { "heading": "Research & outcomes", "body": "Co-authored a 15-page study, designed a conveyor intended to sort items by material, and built a proof of concept. The sorting system could not be completed because of funding limitations. The project was named Most Outstanding Student in the class; Nicolas led circuitry, coding, and 3D modeling." }
+      ]
+    },
+    {
+      "id": "baja-cart-stand", "section": "hardware", "title": "Car Stand CAD Design for BAJA SAE", "tags": ["CAD", "SolidWorks", "BAJA SAE"], "status": "Completed", "accent": "gold", "image": "assets/projects/baja-cart-stand/render.png", "imageAlt": "Rendered BAJA SAE car stand", "summary": "A manufacturing-ready car-stand redesign to stop damage to the vehicle cage and improve stability.", "links": [],
+      "gallery": [
+        { "src": "assets/projects/baja-cart-stand/render.png", "alt": "Final rendered stand", "caption": "Final rendered stand" },
+        { "src": "assets/projects/baja-cart-stand/first-version.png", "alt": "First SolidWorks version of the car stand", "caption": "First SolidWorks version" },
+        { "src": "assets/projects/baja-cart-stand/technical-drawing.png", "alt": "Technical drawing of final car stand", "caption": "Technical drawing" }
+      ],
+      "sections": [
+        { "heading": "Problem", "body": "The existing stand did not fit the car correctly and was damaging its cage." },
+        { "heading": "Design work", "body": "Modeled three structural stand versions in SolidWorks, produced manufacturing-ready technical drawings, contributed to tube-width and layout decisions for stability and weight, and collaborated with a teammate performing Ansys structural analysis." }
+      ]
+    },
+    {
+      "id": "comanda-ia", "section": "software", "title": "Comanda.IA — an AI Chatbot for Restaurants", "tags": ["AI", "FastAPI", "Data systems"], "status": "Completed", "accent": "light", "image": "assets/projects/comanda-ia/architecture.png", "imageAlt": "Comanda.IA system architecture diagram", "summary": "Two AI-powered WhatsApp chatbot systems for restaurant order management, real-time tracking, and analytics—handling more than 100 daily customer interactions.", "links": [],
+      "gallery": [ { "src": "assets/projects/comanda-ia/architecture.png", "alt": "Comanda.IA system architecture diagram", "caption": "System architecture" } ],
+      "sections": [
+        { "heading": "System architecture", "body": "FastAPI for WhatsApp integration; a Chainlit backend; JSON, Google Drive API, and pandas for data management; a Streamlit admin dashboard; and Pytest for AI-response testing." },
+        { "heading": "Key features", "body": "Natural-language order and customer-data registration, delivery-time estimation through the Google Maps Routes API, SQL-query generation for analytics, and automated broadcast messages." }
+      ]
+    },
+    {
+      "id": "energy-consumption-eda", "section": "software", "title": "Energy Consumption Growth in the “AI Era”", "tags": ["EDA", "pandas", "Data visualization"], "status": "Completed", "accent": "gold", "image": "assets/projects/energy-consumption-eda/forecast-analysis.png", "imageAlt": "EIA energy-consumption forecast analysis", "summary": "An exploratory data analysis of U.S. energy-consumption trends following the AI data-center boom.", "links": [ { "label": "View GitHub repository", "url": "https://github.com/nickberredo/ai_energy_consumption/tree/main" } ],
+      "gallery": [ { "src": "assets/projects/energy-consumption-eda/forecast-analysis.png", "alt": "EIA forecast analysis visualization", "caption": "EIA forecast analysis" } ],
+      "sections": [
+        { "heading": "Dataset", "body": "Multiple U.S. Energy Information Administration consumption, outlook, and price reports." },
+        { "heading": "Result", "body": "Identified an increase of more than 2 quadrillion BTU in projected computing-energy consumption in 2050 between the 2019 and 2024 outlooks." },
+        { "heading": "Analysis", "body": "Cleaned, normalized, and categorized historical and projected consumption and price data; compared 2019 and 2025 EIA outlooks; corrected historical energy-price data for inflation; and built a visualization pipeline with pandas and seaborn." }
+      ]
+    }
+  ]
+}
