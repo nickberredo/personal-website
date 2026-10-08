@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nicolas Berredo — hardware engineering portfolio." />
+    <title>Nicolas Berredo — Hardware Engineering</title>
+    <link rel="icon" type="image/png" href="assets/monogram.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Nicolas Berredo home">NB<span>—</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="assets/Nicolas-Berredo-Resume.pdf" target="_blank">Résumé</a>
+      </nav>
+      <a class="header-contact" href="mailto:hello@nicolasberredo.com">Get in touch</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Nicolas Berredo · Hardware Engineering</p>
+          <h1 id="hero-title">Turning possibility into <em>prototypes.</em></h1>
+          <p class="lede">A portfolio of hardware, embedded systems, software, and the experiments that connect them.</p>
+          <a class="button" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="Nicolas Berredo monogram">
+          <img src="assets/monogram.png" alt="NB monogram with circuit-board details" />
+          <p class="art-caption">Precision / curiosity / momentum</p>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Project index</p>
+          <h2 id="work-title">One clear way into the work.</h2>
+          <p>Research leads the way, followed by projects across hardware, software, and analysis.</p>
+        </div>
+        <div id="project-index" aria-live="polite"></div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-mark">NB</div>
+        <div>
+          <p class="eyebrow">Approach</p>
+          <h2 id="about-title">The good stuff happens where technical rigor meets a clear point of view.</h2>
+          <p>I like the full arc: asking the right question, making the first version tangible, and refining until the details hold up. My résumé has the formal version; this site is a quicker way into the work.</p>
+          <a class="text-link" href="assets/Nicolas-Berredo-Resume.pdf" target="_blank">Read résumé <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">New conversations</p>
+        <h2 id="contact-title">Have a hard problem worth making real?</h2>
+        <a class="contact-link" href="mailto:hello@nicolasberredo.com">Let’s talk <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Nicolas Berredo</span>
+      <span>Designed with intent.</span>
+    </footer>
+    <script src="projects.js"></script>
+  </body>
+</html>
