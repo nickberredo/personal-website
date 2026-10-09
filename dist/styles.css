@@ -30,3 +30,10 @@ footer { display:flex; justify-content:space-between; padding-top:1.25rem; paddi
 .footer-links { display:flex; flex-wrap:wrap; gap:.75rem 1rem; }
 .footer-links a { color:inherit; text-decoration:none; }
 .footer-links a:hover { text-decoration:underline; text-underline-offset:3px; }
+.header-actions { display:flex; align-items:center; gap:1.25rem; }
+.header-socials { display:flex; gap:.75rem; }
+.header-socials a { color:var(--green); font-size:.76rem; font-weight:700; text-decoration:none; }
+.header-socials a:hover { text-decoration:underline; text-underline-offset:3px; }
+/* Keep the image visible; the small fade exists only to support the project title. */
+.image-card .project-content { background:linear-gradient(to top,rgba(0,0,0,.52) 0%,rgba(0,0,0,.26) 42%,transparent 78%); text-shadow:0 1px 12px rgba(0,0,0,.45); }
+@media (max-width:760px) { .header-actions { display:none; } }

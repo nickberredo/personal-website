@@ -45,6 +45,7 @@
     {
       "id": "raijin", "section": "hardware", "title": "Raijin — High Voltage Electric Drive & Cage Development", "tags": ["High voltage", "Embedded control", "Safety"], "status": "On hold", "accent": "light", "image": "assets/projects/raijin/interlock-prototype.jpeg", "imageAlt": "Raijin interlock circuit prototype", "summary": "R&D work with UW E-Truck Engineering on a custom cage and a 650 V electric-drive system.", "links": [],
       "gallery": [
+        { "src": "assets/projects/raijin/prototype.png", "alt": "Hand-drawn RAIJIN fan-tachometer and relay circuit schematic", "caption": "Fan-tachometer and relay circuit schematic" },
         { "src": "assets/projects/raijin/interlock-prototype.jpeg", "alt": "Raijin interlock circuit prototype", "caption": "Low-voltage interlock prototype" },
         { "src": "assets/projects/raijin/logo.png", "alt": "E-Truck RSO logo", "caption": "UW E-Truck Engineering" }
       ],
