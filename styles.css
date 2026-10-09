@@ -24,3 +24,9 @@ h1,h2,h3,p { margin-top:0; } h1 { max-width:760px; font-size:clamp(3.4rem,7vw,7.
 footer { display:flex; justify-content:space-between; padding-top:1.25rem; padding-bottom:2rem; border-top:1px solid var(--line); color:#595a55; font-size:.75rem; }
 @media (max-width:760px) { .site-header { height:70px; }.header-contact { display:none; }.hero { grid-template-columns:1fr; min-height:auto; padding:4rem 0 5rem; }.hero-art { max-width:520px; margin:auto; }.section-heading,.about,.featured-project,.project-hero { grid-template-columns:1fr; gap:1.25rem; }.section-heading .eyebrow,.section-heading h2,.section-heading > p:last-child { grid-column:auto; grid-row:auto; }.project-grid,.project-gallery { grid-template-columns:1fr; }.project { min-height:260px; }.work,.about { padding:5rem 0; }.contact { padding:5rem 0; }.project-page { padding-top:2rem; }.project-details { margin-top:4rem; } }
 @media (max-width:400px) { nav { gap:.65rem; } nav a { font-size:.78rem; } }
+
+/* Preserve project photography and renders; contrast comes from the caption overlay. */
+.image-card img, .image-feature img { mix-blend-mode:normal; opacity:1; }
+.footer-links { display:flex; flex-wrap:wrap; gap:.75rem 1rem; }
+.footer-links a { color:inherit; text-decoration:none; }
+.footer-links a:hover { text-decoration:underline; text-underline-offset:3px; }
