@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nicolas Berredo Portfolio Projects",
+  "type": "object",
+  "required": ["siteSections", "projects"],
+  "properties": {
+    "siteSections": {
+      "type": "array",
+      "items": { "type": "object", "required": ["id", "label"], "properties": { "id": { "type": "string" }, "label": { "type": "string" } } }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "section", "title", "tags", "summary", "status", "accent", "image", "imageAlt", "sections"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "section": { "type": "string" },
+          "featured": { "type": "boolean" },
+          "title": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "summary": { "type": "string" },
+          "status": { "type": "string" },
+          "accent": { "enum": ["gold", "light", "green", "ink"] },
+          "image": { "type": ["string", "null"] },
+          "imageAlt": { "type": "string" },
+          "externalUrl": { "type": "string" },
+          "externalLabel": { "type": "string" },
+          "links": { "type": "array", "items": { "type": "object", "required": ["label", "url"], "properties": { "label": { "type": "string" }, "url": { "type": "string" } } } },
+          "gallery": { "type": "array", "items": { "type": "object", "required": ["src", "alt", "caption"], "properties": { "src": { "type": "string" }, "alt": { "type": "string" }, "caption": { "type": "string" } } } },
+          "sections": { "type": "array", "items": { "type": "object", "required": ["heading", "body"], "properties": { "heading": { "type": "string" }, "body": { "type": "string" } } } }
+        }
+      }
+    }
+  }
+}
